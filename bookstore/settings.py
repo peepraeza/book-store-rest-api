@@ -36,7 +36,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'api',
+    'book',
+    'user',
+    # 'transaction',
+    'appconfig',
 ]
 
 MIDDLEWARE = [
@@ -68,6 +71,10 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'bookstore.wsgi.application'
+
+REST_FRAMEWORK = {
+    'EXCEPTION_HANDLER': 'utils.custom_exception.custom_exception_handler',
+}
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases

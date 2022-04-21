@@ -1,7 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="850be203-a168-4e4b-93bc-38765bed3f81" name="Changes" comment="" />
+    <list default="true" id="850be203-a168-4e4b-93bc-38765bed3f81" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appconfig/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appconfig/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appconfig/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appconfig/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/decorators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transaction/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transaction/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transaction/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transaction/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transaction/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transaction/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transaction/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transaction/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/custom_exception.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/appconfig/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/appconfig/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/book/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/appconfig/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/book/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/appconfig/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,24 +66,44 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="280s6CZ3LllkP1HNoX2QVW2ytri" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/peepeerawit/Documents/Conicle_Project/bookstore/user",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/user" />
+      <recent name="$PROJECT_DIR$/appconfig" />
+      <recent name="$PROJECT_DIR$/member" />
+      <recent name="$PROJECT_DIR$/book" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="bookstore" type="Python.DjangoServer" factoryName="Django server">
       <module name="bookstore" />
@@ -71,12 +140,26 @@
       <updated>1650364660283</updated>
       <workItem from="1650364662438" duration="450000" />
       <workItem from="1650365124032" duration="3063000" />
-      <workItem from="1650437466294" duration="27461000" />
+      <workItem from="1650437466294" duration="47327000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

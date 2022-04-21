@@ -1,19 +1,18 @@
 from rest_framework import serializers
-from api.models import Book, Member, Admin, AppConfig, Transaction
 from django.contrib.auth.models import User
-from django.contrib.auth import password_validation
-
-
-class BookSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Book
-        fields = ('book_id', 'book_name', 'book_author', 'book_price', 'book_point', 'book_amount', 'created_at')
+from user.models import Member, Admin
 
 
 class MemberSerializer(serializers.ModelSerializer):
     class Meta:
         model = Member
-        fields = ['member_phone', 'member_point', 'user_id']
+        fields = ['member_name', 'member_phone', 'member_point', 'user_id']
+
+
+class AdminSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Admin
+        fields = ['admin_name', 'user_id']
 
 
 class UserSerializer(serializers.ModelSerializer):
