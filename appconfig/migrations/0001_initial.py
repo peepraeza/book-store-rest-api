@@ -12,14 +12,12 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Book',
+            name='AppConfig',
             fields=[
-                ('book_id', models.AutoField(primary_key=True, serialize=False)),
-                ('book_name', models.CharField(max_length=100)),
-                ('book_author', models.CharField(max_length=100)),
-                ('book_price', models.IntegerField()),
-                ('book_point', models.IntegerField()),
-                ('book_amount', models.IntegerField()),
+                ('app_config_id', models.AutoField(primary_key=True, serialize=False)),
+                ('app_config_group', models.CharField(max_length=100)),
+                ('app_config_key', models.CharField(max_length=100)),
+                ('app_config_value', models.CharField(max_length=100)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('updated_at', models.DateTimeField(auto_now=True)),
             ],
