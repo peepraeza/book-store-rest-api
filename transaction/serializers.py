@@ -1,15 +1,26 @@
 from rest_framework import serializers
-from book.models import Book
-
-from django.contrib.auth.models import User
-from django.contrib.auth import password_validation
+from transaction.models import Transaction, TransactionBookMapping
 
 
-class BookSerializer(serializers.ModelSerializer):
+class TransactionSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Book
-        fields = ('book_id', 'book_name', 'book_author', 'book_price', 'book_point', 'book_amount', 'created_at')
+        model = Transaction
+        fields = ('transaction_id', 'member_id', 'total_price', 'discount')
 
 
+class TransactionBookMappingSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TransactionBookMapping
+        fields = ('transaction_id', 'book_id', 'book_amount')
 
 
+class BookOrderSerializer(serializers.Serializer):
+    book_id = serializers.IntegerField(required=True)
+    book_amount = serializers.IntegerField(required=True)
+
+
+class BookTransactionSerializer(serializers.Serializer):
+    total_price = serializers.IntegerField(default=0)
+    redeem_cash = serializers.IntegerField(default=0)
+    point_receive = serializers.IntegerField(default=0)
+    books = BookOrderSerializer(many=True)

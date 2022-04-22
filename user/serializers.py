@@ -6,7 +6,7 @@ from user.models import Member, Admin
 class MemberSerializer(serializers.ModelSerializer):
     class Meta:
         model = Member
-        fields = ['member_name', 'member_phone', 'member_point', 'user_id']
+        fields = ['member_id', 'member_name', 'member_phone', 'member_point', 'user_id']
 
 
 class AdminSerializer(serializers.ModelSerializer):

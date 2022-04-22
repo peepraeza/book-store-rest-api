@@ -22,7 +22,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('book.urls')),
     path('api/', include('user.urls')),
-    # path('api/', include('admin.urls')),
+    path('api/', include('transaction.urls')),
+    path('api/', include('cart.urls')),
+    path('api/', include('appconfig.urls')),
 
 
 ]

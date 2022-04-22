@@ -38,8 +38,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'book',
     'user',
-    # 'transaction',
+    'transaction',
     'appconfig',
+    'cart'
 ]
 
 MIDDLEWARE = [

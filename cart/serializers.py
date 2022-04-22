@@ -1,14 +1,15 @@
 from rest_framework import serializers
-from book.models import Book
-
-from django.contrib.auth.models import User
-from django.contrib.auth import password_validation
+from cart.models import Cart
 
 
-class BookSerializer(serializers.ModelSerializer):
+class CartSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Book
-        fields = ('book_id', 'book_name', 'book_author', 'book_price', 'book_point', 'book_amount', 'created_at')
+        model = Cart
+        fields = ('member_id', 'book_id', 'book_amount')
+        extra_kwargs = {
+            'member_id': {'write_only': True}
+        }
+
 
 
 
