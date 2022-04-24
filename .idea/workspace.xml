@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="850be203-a168-4e4b-93bc-38765bed3f81" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appconfig/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/appconfig/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/book/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/book/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/decorators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/transaction/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/transaction/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/transaction/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/transaction/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils.py" afterDir="false" />
-    </list>
+    <list default="true" id="850be203-a168-4e4b-93bc-38765bed3f81" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,19 +31,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/peepeerawit/Documents/Conicle_Project/bookstore/cart&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/peepeerawit/Documents/Conicle_Project/book-store-rest-api",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.editor"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/cart" />
@@ -108,7 +92,8 @@
       <updated>1650364660283</updated>
       <workItem from="1650364662438" duration="450000" />
       <workItem from="1650365124032" duration="3063000" />
-      <workItem from="1650437466294" duration="88948000" />
+      <workItem from="1650437466294" duration="66783000" />
+      <workItem from="1650638938801" duration="31000" />
     </task>
     <servers />
   </component>
