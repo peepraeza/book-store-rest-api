@@ -1,4 +1,3 @@
-from django.http import JsonResponse
 from rest_framework import status
 from rest_framework.exceptions import NotFound
 from rest_framework.response import Response
@@ -7,7 +6,6 @@ from rest_framework.views import APIView
 from book.models import Book
 from book.serializers import BookSerializer
 
-# Create your views here.
 from middleware.decorators import is_authentication
 
 

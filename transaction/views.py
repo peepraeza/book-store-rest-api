@@ -35,6 +35,8 @@ class BookOrderView(APIView):
                 raise ParseError('unable to redeem')
             discount_cash = redeem_point / point_ratio
         carts = Cart.objects.filter(member_id=member.member_id)
+        if len(carts) == 0:
+            raise ParseError('No Any Books in Cart')
         transaction_serializer = TransactionSerializer(data={'member_id': member.member_id})
         transaction_serializer.is_valid(raise_exception=True)
         transaction = transaction_serializer.save()

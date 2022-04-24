@@ -3,7 +3,6 @@ from book.models import Book
 from user.models import Member
 
 
-# Create your models here.
 class Cart(models.Model):
     member_id = models.ForeignKey(Member, db_column='member_id', on_delete=models.CASCADE)
     book_id = models.ForeignKey(Book, db_column='book_id', on_delete=models.CASCADE)

@@ -4,7 +4,6 @@ from user.models import Member
 from book.models import Book
 
 
-# Create your models here.
 class Transaction(models.Model):
     transaction_id = models.AutoField(primary_key=True)
     member_id = models.ForeignKey(Member, db_column='member_id', on_delete=models.CASCADE)

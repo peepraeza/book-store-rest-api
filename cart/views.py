@@ -1,4 +1,3 @@
-from django.http import JsonResponse
 from rest_framework import status
 from rest_framework.exceptions import NotFound, ParseError
 from rest_framework.response import Response
@@ -20,15 +19,19 @@ class CartActionView(APIView):
         cart_serializer = CartSerializer(cart, many=True)
         total_price = 0
         point_receive = 0
+        total_amount = 0
         for c in cart:
             book = Book.objects.get(book_id=c.book_id_id)
-            total_price += book.book_price
-            point_receive += book.book_point
+            if c.book_amount > book.book_amount:
+                raise ParseError('book_id: {} not enough amount for sell'.format(book.book_id))
+            total_amount += c.book_amount
+            total_price += book.book_price * c.book_amount
+            point_receive += book.book_point * c.book_amount
         return Response({
             'books': cart_serializer.data,
             'total_price': total_price,
             'point_receive': point_receive,
-            'amount': len(cart_serializer.data)
+            'amount': total_amount
         })
 
     @is_authentication(allowed_role=['MEMBER'])
