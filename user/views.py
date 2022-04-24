@@ -4,8 +4,8 @@ import jwt
 from rest_framework.exceptions import AuthenticationFailed, NotFound
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework import status
 from django.contrib.auth.models import User
-
 
 # Create your views here.
 from appconfig.models import AppConfig
@@ -27,7 +27,7 @@ class MemberRegisterView(APIView):
         member_serializer = MemberSerializer(data=request.data)
         if member_serializer.is_valid():
             member_serializer.save(user_id=user_id)
-        return Response(member_serializer.data)
+        return Response({'detail': 'Member Created Successfully'}, status=status.HTTP_201_CREATED)
 
 
 class UserLoginView(APIView):
@@ -63,9 +63,7 @@ class UserLoginView(APIView):
         }
 
         token = jwt.encode(payload, 'secret', algorithm='HS256')
-
         response = Response()
-
         response.data = {
             'token': token
         }
@@ -100,7 +98,7 @@ class AdminRegisterView(APIView):
         admin_serializer = AdminSerializer(data=request.data)
         admin_serializer.is_valid(raise_exception=True)
         admin_serializer.save(user_id=user_id)
-        return Response(admin_serializer.data)
+        return Response({'detail': 'Admin Created Successfully'}, status=status.HTTP_201_CREATED)
 
 
 class AdminInfoView(APIView):

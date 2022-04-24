@@ -22,7 +22,7 @@ def is_authentication(allowed_role=[]):
                 raise AuthenticationFailed()
             role = payload['role']
             if role not in allowed_role:
-                raise PermissionDenied('PermissionDenied')
+                raise PermissionDenied()
 
             return func(request, *args, **kwargs)
 

@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls import (
+  handler400, handler403, handler404, handler500)
 
-# from django.conf.urls import url, include
+from utils.utils import error_500, error_404
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,6 +27,7 @@ urlpatterns = [
     path('api/', include('transaction.urls')),
     path('api/', include('cart.urls')),
     path('api/', include('appconfig.urls')),
-
-
 ]
+
+handler404 = error_404
+handler500 = error_500

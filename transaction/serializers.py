@@ -2,25 +2,22 @@ from rest_framework import serializers
 from transaction.models import Transaction, TransactionBookMapping
 
 
-class TransactionSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Transaction
-        fields = ('transaction_id', 'member_id', 'total_price', 'discount')
-
-
 class TransactionBookMappingSerializer(serializers.ModelSerializer):
     class Meta:
         model = TransactionBookMapping
         fields = ('transaction_id', 'book_id', 'book_amount')
+        extra_kwargs = {
+            'transaction_id': {'write_only': True}
+        }
 
 
-class BookOrderSerializer(serializers.Serializer):
-    book_id = serializers.IntegerField(required=True)
-    book_amount = serializers.IntegerField(required=True)
+class TransactionSerializer(serializers.ModelSerializer):
+    books = TransactionBookMappingSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Transaction
+        fields = ['transaction_id', 'member_id', 'total_price', 'discount', 'created_at', 'books']
 
 
-class BookTransactionSerializer(serializers.Serializer):
-    total_price = serializers.IntegerField(default=0)
-    redeem_cash = serializers.IntegerField(default=0)
-    point_receive = serializers.IntegerField(default=0)
-    books = BookOrderSerializer(many=True)
+class BookOrderReqSerializer(serializers.Serializer):
+    redeem_point = serializers.IntegerField(required=True)

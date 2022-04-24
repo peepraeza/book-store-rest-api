@@ -22,9 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-dz%%n%dvj-wptfvla*pn9#3eo&dt890f5*3aq@^yzdtf8qt0ch'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 # Application definition
 
@@ -75,6 +75,7 @@ WSGI_APPLICATION = 'bookstore.wsgi.application'
 
 REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'utils.custom_exception.custom_exception_handler',
+    'DATETIME_FORMAT': '%Y-%m-%d %H:%M:%S'
 }
 
 # Database
@@ -114,11 +115,11 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Bangkok'
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = False
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/

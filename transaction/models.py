@@ -14,7 +14,8 @@ class Transaction(models.Model):
 
 
 class TransactionBookMapping(models.Model):
-    transaction_id = models.ForeignKey(Transaction, db_column='transaction_id', on_delete=models.CASCADE)
+    transaction_id = models.ForeignKey(Transaction, db_column='transaction_id', related_name='books',
+                                       on_delete=models.CASCADE)
     book_id = models.ForeignKey(Book, db_column='book_id', on_delete=models.CASCADE)
     book_amount = models.IntegerField(default=0)
     created_at = models.DateTimeField(auto_now_add=True, editable=False)

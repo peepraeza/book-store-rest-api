@@ -21,4 +21,4 @@ class AppConfigView(APIView):
         except Exception as e:
             raise Exception(e)
 
-        return Response({'data': 'success'})
+        return Response({'detail': 'Point Ratio Updated Successfully'})
